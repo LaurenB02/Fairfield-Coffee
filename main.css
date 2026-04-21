@@ -23,15 +23,25 @@
   position: relative;
  }
 
- header h1 {
+ section.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: verdana, sans-serif;
   font-size: 350%;
   margin: 3rem;
   line-height: 1;
+  padding: 1rem;
+ }
+
+ img.logo2 {
+  width: 120px;
+  padding:1rem;
  }
 
 
-
+ 
 /* NAV BAR
 ----------------------------*/
  nav {
@@ -76,51 +86,37 @@
   background-color: white;
   line-height: 1.5;
   font-size: 120%;
-  color: #474747;
+  color: #574c4c;
   padding: 1rem;
+  border: 20px solid rgb(78, 65, 57);
  }
 
-
-
-/* FOOD ITEMS
-----------------------------*/
- section.food {
+ section.grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   justify-content: center;
-  gap: 1rem;
-  img { width: 450px; height: auto; 
-    border-radius: 2em;}
+  gap: .5rem;
  }
 
- section.monthly {
+ section.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: .5rem;
+  img { width: 500px; height: 600px; 
+  border-radius: 2em;
+}
+ }
+
+ section.grid2a {
     grid-column: 1/2;
-    grid-row: 1/2;
   display: block;
   margin-left: auto;
   margin-right: auto;
  }
 
- section.monthly2 {
-    grid-column: 1/2;
-    grid-row: 2/2;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
-
- section.new {
+ section.grid2b {
     grid-column: 2/2;
-    grid-row: 1/2;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- }
-
- section.new2 {
-    grid-column: 2/2;
-    grid-row: 2/2;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -129,22 +125,58 @@
 h2 {
   text-align: center;
   font-size: 150%;
-  background-color: #425568;
+  color: #473e3e;
 }
 
 h3 {
   text-align: center;
+  font-size: 150%;
+  color: #473e3e;
 }
 
 p {
   text-align: center;
 }
 
+p.more {
+  align-items: center;
+  padding: 0.7rem;
+  border-radius: 3em;
+  background-color: #425568;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+section.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: .5rem;
+}
+
+h4 {
+  text-align: center;
+  font-size: 150%;
+  color: #473e3e;
+}
+
+
 
 /* IMAGES
 ----------------------------*/
- img {
+ img.grid {
   max-width: 100%;
+  min-width: 100%;
   height: auto;
   box-shadow: 0 0 15px rgb(75, 51, 51);
  }

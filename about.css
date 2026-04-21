@@ -23,11 +23,21 @@
   position: relative;
  }
 
- header h1 {
+ section.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: verdana, sans-serif;
   font-size: 350%;
   margin: 3rem;
   line-height: 1;
+  padding: 1rem;
+ }
+
+ img.logo2 {
+  width: 120px;
+  padding:1rem;
  }
 
 
@@ -76,19 +86,34 @@
   background-color: white;
   line-height: 1.5;
   font-size: 120%;
-  color: #474747;
-  padding: 1rem;
+  color: #574c4c;
+  padding: 3rem;
+  display: block;
+  text-align: center;
+  border: 20px solid rgb(78, 65, 57);
  }
 
+ h2{
+  font-size: 200%;
+ }
+
+ h3{
+  font-size: 175%;
+ }
+
+ img.store {
+  width: 600px;
+  padding: 2rem;
+ }
 
 
 /* FOOTER
 ----------------------------*/
  footer {
-    color: white;
-    text-align: center;
-    font-size: .8rem;
-    padding: 1rem;
-    font-family: verdana, sans-serif;
-    background-color: rgb(78, 65, 57);
+  color: white;
+  text-align: center;
+  font-size: .8rem;
+  padding: 1rem;
+  font-family: verdana, sans-serif;
+  background-color: rgb(78, 65, 57);
  }

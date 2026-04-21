@@ -23,11 +23,21 @@
   position: relative;
  }
 
- header h1 {
+ section.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-family: verdana, sans-serif;
   font-size: 350%;
   margin: 3rem;
   line-height: 1;
+  padding: 1rem;
+ }
+
+ img.logo2 {
+  width: 120px;
+  padding:1rem;
  }
 
 
@@ -76,11 +86,59 @@
   background-color: white;
   line-height: 1.5;
   font-size: 120%;
-  color: #474747;
+  color: #574c4c;
   padding: 1rem;
+  border: 20px solid rgb(78, 65, 57);
  }
 
+  section.text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content:space-evenly;
+    align-items: center;
+  }
 
+  section.address {
+    grid-column: 1/3;
+    grid-row: 1/1;
+    display: block;
+    margin-right: auto;
+    line-height: 15px;
+  }
+
+  section.hours {
+    grid-column: 2/3;
+    grid-row: 1/1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 15px;
+  }
+
+  section.contact {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 15px;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img.sign {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
 
 /* FOOTER
 ----------------------------*/
